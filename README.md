@@ -12,8 +12,4 @@
 #https://www.kaggle.com/nasa/kepler-exoplanet-search-results
 
 #A link describing what the columns represent
-<<<<<<< HEAD
 #https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#exo_arch_info
-=======
-#https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#exo_arch_info
->>>>>>> 29262a70a56d7caf1eff8e38b1785c2ec837c88d
