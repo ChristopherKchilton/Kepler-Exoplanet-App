@@ -7,11 +7,11 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app, server
-from pages import index, predictions, insights, process
+from pages import index, predictions, insights, process, newpage
 
 # Navbar docs: https://dash-bootstrap-components.opensource.faculty.ai/l/components/navbar
 navbar = dbc.NavbarSimple(
-    brand='YOUR APP NAME',
+    brand='Exoplanet Canidates',
     brand_href='/', 
     children=[
         dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
@@ -19,9 +19,9 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
     ],
     sticky='top',
-    color='light', 
-    light=True, 
-    dark=False
+    color='dark', 
+    light=False, 
+    dark=True
 )
 
 # Footer docs:
@@ -35,11 +35,11 @@ footer = dbc.Container(
         dbc.Col(
             html.P(
                 [
-                    html.Span('Your Name', className='mr-2'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:<you>@<provider>.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/<you>/<repo>'), 
-                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/<you>/'), 
-                    html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
+                    html.Span('Christopher Chilton', className='mr-2'), 
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:chris.kchilton@gmail.com'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/ChristopherKchilton/Kepler-Exoplanet-App'), 
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/christopher-chilton-a15aa492/'), 
+                    # html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
                 ], 
                 className='lead'
             )

@@ -16,28 +16,34 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            ## Space Exploration
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            Ever since the first space missions, humans have dreamed of building 
+            space ships and exploring the Universe. However, propulsion technology 
+            has not improved much since in the past century. With how vast space is, 
+            other methods were created to "explore" space. One such method is the use 
+            of telescopes and satalites to find distant planets.
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            The Kepler Space Telescope just finished its mission in 2018 and the Data is collected
+            is stored in a NASA database. With the help of machine learning we are able to predict
+            whether the data observed from the chaning sun light are possible distant exoplanets
+            or comsic noise. So join us as we explore the Universe!
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Find Exoplanets', color='primary'), href='/predictions')
     ],
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
+# gapminder = px.data.gapminder()
+# fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
+#            hover_name="country", log_x=True, size_max=60)
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src='assets/pexels-philippe-donn-1169754.jpg', className='img-fluid')
+        # dcc.Graph(figure=fig),
     ]
 )
 
