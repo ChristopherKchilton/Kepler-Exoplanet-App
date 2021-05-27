@@ -53,19 +53,19 @@ column1 = dbc.Col(
             learning model. 
 
             ##### Planetary Radius : 
-            Is the Radius of the object passing in front of the Star
+            Planetary Radius is the Radius of the object passing in front of the Star
             ##### Insolation Flux : 
-            Is another way to describe the equilibrium temperature
+            Insolation Flux is another way to describe the equilibrium temperature
             ##### Transit Signal : 
-            Is the uncertainty in the flux during the objects transition in front of the Star.
+            Transit Signal is the uncertainty in the flux during the objects transition in front of the Star.
             ##### Transit Duration : 
-            Is the duration in hours the object traveled in front of the Star
+            Transit Duration is the duration in hours the object traveled in front of the Star
             ##### Kepler Band : 
-            Is the Band or frequency the observation was made on for the telescope
+            Kepler Band is the Band or frequency the observation was made on for the telescope
             ##### Orbital Period Days : 
-            Is the interval between consecutive transitions
+            Orbital Period Days is the interval between consecutive transitions
             ##### Stellar Effective Temperature : 
-            Is the photospheric temperature of the star
+            Stellar Effective Temperature is the photospheric temperature of the star
             """
         ),
         html.H2('Exoplanet Prediction', className='mb-5'),
